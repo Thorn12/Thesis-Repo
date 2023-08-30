@@ -1,0 +1,81 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://data.biographynet.nl/rdf/> .
+@prefix ns3: <https://www.w3.org/TR/prov-o/#> .
+
+ns1:Person-99999999 {
+    ns1:PersonDes-99999999_01 ns3:wasDerivedFrom ns2:BioDes-99999999_01 .
+
+    ns1:PersonDes-99999999_02 ns3:wasDerivedFrom ns2:BioDes-99999999_02 .
+
+    ns1:PersonDes-99999999_03 ns3:wasDerivedFrom ns2:BioDes-99999999_03 .
+
+    ns1:PersonDes-99999999_04 ns3:wasDerivedFrom ns2:BioDes-99999999_04 .
+
+    ns1:PersonDes-99999999_05 ns3:wasDerivedFrom ns2:BioDes-99999999_05 .
+
+    ns1:PersonDes-99999999_06 ns3:wasDerivedFrom ns2:BioDes-99999999_06 .
+
+    ns1:PersonDes-99999999_07 ns3:wasDerivedFrom ns2:BioDes-99999999_07 .
+
+    ns2:BioDes-99999999_01 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasBioParts ns2:BioParts-99999999_01 ;
+        ns2:hasFileDes ns2:FileDes-99999999_01 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_01 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_01" .
+
+    ns2:BioDes-99999999_02 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasFileDes ns2:FileDes-99999999_02 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_02 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_02" .
+
+    ns2:BioDes-99999999_03 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasFileDes ns2:FileDes-99999999_03 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_03 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_03" .
+
+    ns2:BioDes-99999999_04 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasBioParts ns2:BioParts-99999999_04 ;
+        ns2:hasFileDes ns2:FileDes-99999999_04 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_04 ;
+        ns2:version "1.0" ;
+        ns2:xmlFileID "99999999_04" .
+
+    ns2:BioDes-99999999_05 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasBioParts ns2:BioParts-99999999_05 ;
+        ns2:hasFileDes ns2:FileDes-99999999_05 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_05 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_05" .
+
+    ns2:BioDes-99999999_06 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasBioParts ns2:BioParts-99999999_06 ;
+        ns2:hasFileDes ns2:FileDes-99999999_06 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_06 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_06" .
+
+    ns2:BioDes-99999999_07 a ns2:BioDes,
+            <http://www.openarchives.org/ore/terms/Aggregation> ;
+        ns2:aggregatedPerson ns2:Person-99999999 ;
+        ns2:hasBioParts ns2:BioParts-99999999_07 ;
+        ns2:hasFileDes ns2:FileDes-99999999_07 ;
+        ns2:hasPersonDes ns2:PersonDes-99999999_07 ;
+        ns2:version "1.0.1" ;
+        ns2:xmlFileID "99999999_07" .
+}
+

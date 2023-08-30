@@ -1,0 +1,60 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://data.biographynet.nl/rdf/> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns4: <http://ldf.fi/schema/bioc/> .
+@prefix ns5: <http://www.openarchives.org/ore/terms/> .
+@prefix ns6: <http://www.intavia.eu/idm-core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_01 {
+    ns2:Category-Beeldende_kunsten_vormgeving a ns2:Category ;
+        rdfs:label "Beeldende kunsten & vormgeving" .
+
+    ns2:Education-Nederlands_recht_Katholieke_Universiteit_Nijmegen a ns4:Education ;
+        rdfs:label "Nederlands recht, Katholieke Universiteit Nijmegen" .
+
+    ns2:Education-gymnasium a ns4:Education ;
+        rdfs:label "gymnasium" .
+
+    ns2:Faith-Rooms-Katholiek a ns2:Faith ;
+        rdfs:label "Rooms-Katholiek" .
+
+    ns2:Person-99999999 a ns3:E21_Person,
+            ns6:Person_Proxy,
+            ns6:Provided_Person ;
+        ns2:has_category ns2:Category-Beeldende_kunsten_vormgeving ;
+        ns2:has_education ns2:Education-Nederlands_recht_Katholieke_Universiteit_Nijmegen,
+            ns2:Education-gymnasium ;
+        ns2:has_faith ns2:Faith-Rooms-Katholiek ;
+        ns2:has_residence ns2:Residence-Zevenaar,
+            ns2:Residence-s-Gravenhage ;
+        ns2:personID "99999999" ;
+        ns4:has_gender ns4:Female ;
+        ns4:has_nationality ns4:dutch ;
+        ns3:P48_has_preferred_identifier ns2:PersonDes-99999999_01-1789222-id,
+            ns2:PersonDes-99999999_01-2081184-id,
+            ns2:PersonDes-99999999_01-2224963-id ;
+        ns6:person_proxy_for ns2:Person-99999999 ;
+        ns5:proxyIn ns2:BioDes-99999999_01 .
+
+    ns2:PersonDes-99999999_01-1789222-id a ns3:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns3:P2_has_type "bioport" .
+
+    ns2:PersonDes-99999999_01-2081184-id a ns3:E42_Identifier ;
+        rdfs:label "bioport" ;
+        ns3:P2_has_type "source" .
+
+    ns2:PersonDes-99999999_01-2224963-id a ns3:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns3:P2_has_type "id" .
+
+    ns2:Residence-Zevenaar a ns2:Residence ;
+        rdfs:label "Zevenaar" .
+
+    ns2:Residence-s-Gravenhage a ns2:Residence ;
+        rdfs:label "'s-Gravenhage" .
+
+    ns4:Female a ns4:Gender .
+}
+

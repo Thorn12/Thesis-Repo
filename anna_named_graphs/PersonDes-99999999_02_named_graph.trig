@@ -1,0 +1,46 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://data.biographynet.nl/rdf/> .
+@prefix ns4: <http://www.intavia.eu/idm-core/> .
+@prefix ns5: <http://ldf.fi/schema/bioc/> .
+@prefix ns6: <http://www.openarchives.org/ore/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_02 {
+    ns3:Category-Beeldende_kunsten_vormgeving a ns3:Category ;
+        rdfs:label "Beeldende kunsten & vormgeving" .
+
+    ns3:Person-99999999 a ns2:E21_Person,
+            ns4:Person_Proxy,
+            ns4:Provided_Person ;
+        ns3:has_category ns3:Category-Beeldende_kunsten_vormgeving ;
+        ns3:has_residence ns3:Residence-Den_Haag ;
+        ns3:personID "99999999" ;
+        ns5:has_nationality ns5:dutch ;
+        ns2:P48_has_preferred_identifier ns3:PersonDes-99999999_02-4685517-id,
+            ns3:PersonDes-99999999_02-4992526-id,
+            ns3:PersonDes-99999999_02-7315318-id,
+            ns3:PersonDes-99999999_02-8214168-id ;
+        ns4:person_proxy_for ns3:Person-99999999 ;
+        ns6:proxyIn ns3:BioDes-99999999_02 .
+
+    ns3:PersonDes-99999999_02-4685517-id a ns2:E42_Identifier ;
+        rdfs:label "99999923" ;
+        ns2:P2_has_type "id" .
+
+    ns3:PersonDes-99999999_02-4992526-id a ns2:E42_Identifier ;
+        rdfs:label "bioport" ;
+        ns2:P2_has_type "source" .
+
+    ns3:PersonDes-99999999_02-7315318-id a ns2:E42_Identifier ;
+        rdfs:label "99999923" ;
+        ns2:P2_has_type "bioport" .
+
+    ns3:PersonDes-99999999_02-8214168-id a ns2:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns2:P2_has_type "bioport" .
+
+    ns3:Residence-Den_Haag a ns3:Residence ;
+        rdfs:label "Den Haag" .
+}
+

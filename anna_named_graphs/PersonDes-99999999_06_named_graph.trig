@@ -1,0 +1,49 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.openarchives.org/ore/terms/> .
+@prefix ns4: <http://www.intavia.eu/idm-core/> .
+@prefix ns5: <http://data.biographynet.nl/rdf/> .
+@prefix ns6: <http://ldf.fi/schema/bioc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_06 {
+    ns5:Person-99999999 a ns2:E21_Person,
+            ns4:Person_Proxy,
+            ns4:Provided_Person ;
+        ns5:persName ns5:bnode-75596970 ;
+        ns5:personID "99999999" ;
+        ns6:has_nationality ns6:dutch ;
+        ns2:P48_has_preferred_identifier ns5:PersonDes-99999999_06-1067357-id,
+            ns5:PersonDes-99999999_06-417214-id,
+            ns5:PersonDes-99999999_06-5047260-id,
+            ns5:PersonDes-99999999_06-6718025-id,
+            ns5:PersonDes-99999999_06-7485098-id ;
+        ns4:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_06 .
+
+    ns5:PersonDes-99999999_06-1067357-id a ns2:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns2:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_06-417214-id a ns2:E42_Identifier ;
+        rdfs:label "vdaa" ;
+        ns2:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_06-5047260-id a ns2:E42_Identifier ;
+        rdfs:label "9996969" ;
+        ns2:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_06-6718025-id a ns2:E42_Identifier ;
+        rdfs:label "99999443" ;
+        ns2:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_06-7485098-id a ns2:E42_Identifier ;
+        rdfs:label "with009" ;
+        ns2:P2_has_type "dbnl_id" .
+
+    ns5:bnode-75596970 a ns5:PersName ;
+        ns5:name ns5:bnode-12613247 ;
+        rdf:value "Anna " .
+}
+

@@ -1,0 +1,297 @@
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns2: <http://www.intavia.eu/idm-core/> .
+@prefix ns3: <http://www.openarchives.org/ore/terms/> .
+@prefix ns4: <http://ldf.fi/schema/bioc/> .
+@prefix ns5: <http://data.biographynet.nl/rdf/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:N83b5330a8609437a9e14dbb8f1b63828 {
+    ns5:BioDes-99999999_01 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasBioParts ns5:BioParts-99999999_01 ;
+        ns5:hasFileDes ns5:FileDes-99999999_01 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_01 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_01" .
+
+    ns5:BioDes-99999999_02 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasFileDes ns5:FileDes-99999999_02 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_02 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_02" .
+
+    ns5:BioDes-99999999_03 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasFileDes ns5:FileDes-99999999_03 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_03 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_03" .
+
+    ns5:BioDes-99999999_04 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasBioParts ns5:BioParts-99999999_04 ;
+        ns5:hasFileDes ns5:FileDes-99999999_04 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_04 ;
+        ns5:version "1.0" ;
+        ns5:xmlFileID "99999999_04" .
+
+    ns5:BioDes-99999999_05 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasBioParts ns5:BioParts-99999999_05 ;
+        ns5:hasFileDes ns5:FileDes-99999999_05 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_05 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_05" .
+
+    ns5:BioDes-99999999_06 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasBioParts ns5:BioParts-99999999_06 ;
+        ns5:hasFileDes ns5:FileDes-99999999_06 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_06 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_06" .
+
+    ns5:BioDes-99999999_07 a ns5:BioDes,
+            ns3:Aggregation ;
+        ns5:aggregatedPerson ns5:Person-99999999 ;
+        ns5:hasBioParts ns5:BioParts-99999999_07 ;
+        ns5:hasFileDes ns5:FileDes-99999999_07 ;
+        ns5:hasPersonDes ns5:PersonDes-99999999_07 ;
+        ns5:version "1.0.1" ;
+        ns5:xmlFileID "99999999_07" .
+
+    ns5:Education-Nederlands_recht_Katholieke_Universiteit_Nijmegen a ns4:Education ;
+        rdfs:label "Nederlands recht, Katholieke Universiteit Nijmegen" .
+
+    ns5:Education-gymnasium a ns4:Education ;
+        rdfs:label "gymnasium" .
+
+    ns5:Faith-Rooms-Katholiek a ns5:Faith ;
+        rdfs:label "Rooms-Katholiek" .
+
+    ns5:Occupation-schilder a ns4:Occupation ;
+        rdfs:label "schilder" .
+
+    ns5:Occupation-tekenaar a ns4:Occupation ;
+        rdfs:label "tekenaar" .
+
+    ns5:PersonDes-99999999_01 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:has_category ns5:Category-Beeldende_kunsten_vormgeving ;
+        ns5:has_education ns5:Education-Nederlands_recht_Katholieke_Universiteit_Nijmegen,
+            ns5:Education-gymnasium ;
+        ns5:has_faith ns5:Faith-Rooms-Katholiek ;
+        ns5:has_residence ns5:Residence-Zevenaar,
+            ns5:Residence-s-Gravenhage ;
+        ns4:has_gender ns4:Female ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_01-1789222-id,
+            ns5:PersonDes-99999999_01-2081184-id,
+            ns5:PersonDes-99999999_01-2224963-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_01 .
+
+    ns5:PersonDes-99999999_01-1789222-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_01-2081184-id a ns1:E42_Identifier ;
+        rdfs:label "bioport" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_01-2224963-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_02 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:has_category ns5:Category-Beeldende_kunsten_vormgeving ;
+        ns5:has_residence ns5:Residence-Den_Haag ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_02-4685517-id,
+            ns5:PersonDes-99999999_02-4992526-id,
+            ns5:PersonDes-99999999_02-7315318-id,
+            ns5:PersonDes-99999999_02-8214168-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_02 .
+
+    ns5:PersonDes-99999999_02-4685517-id a ns1:E42_Identifier ;
+        rdfs:label "99999923" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_02-4992526-id a ns1:E42_Identifier ;
+        rdfs:label "bioport" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_02-7315318-id a ns1:E42_Identifier ;
+        rdfs:label "99999923" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_02-8214168-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_03 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:has_category ns5:Category-Beeldende_kunsten_vormgeving ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_03-2410088-id,
+            ns5:PersonDes-99999999_03-3614974-id,
+            ns5:PersonDes-99999999_03-804689-id,
+            ns5:PersonDes-99999999_03-9193633-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_03 .
+
+    ns5:PersonDes-99999999_03-2410088-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_03-3614974-id a ns1:E42_Identifier ;
+        rdfs:label "99999945" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_03-804689-id a ns1:E42_Identifier ;
+        rdfs:label "bioport" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_03-9193633-id a ns1:E42_Identifier ;
+        rdfs:label "99999945" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_04 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:persName ns5:bnode-94858530,
+            "Dalen, Anna van" ;
+        ns4:has_gender ns4:Female ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_04-5492806-id,
+            ns5:PersonDes-99999999_04-8792693-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_04 .
+
+    ns5:PersonDes-99999999_04-5492806-id a ns1:E42_Identifier ;
+        rdfs:label "AnnaTest" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_04-8792693-id a ns1:E42_Identifier ;
+        rdfs:label "dvn" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_05 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:persName "Testperson, Anna" ;
+        ns4:has_gender ns4:Female ;
+        ns4:has_nationality ns4:dutch ;
+        ns4:has_occupation ns5:Occupation-schilder,
+            ns5:Occupation-tekenaar ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_05-34221-id,
+            ns5:PersonDes-99999999_05-4001966-id,
+            ns5:PersonDes-99999999_05-719412-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_05 .
+
+    ns5:PersonDes-99999999_05-34221-id a ns1:E42_Identifier ;
+        rdfs:label "rkdartists" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_05-4001966-id a ns1:E42_Identifier ;
+        rdfs:label "47698" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_05-719412-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_06 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:persName ns5:bnode-75596970 ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_06-1067357-id,
+            ns5:PersonDes-99999999_06-417214-id,
+            ns5:PersonDes-99999999_06-5047260-id,
+            ns5:PersonDes-99999999_06-6718025-id,
+            ns5:PersonDes-99999999_06-7485098-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_06 .
+
+    ns5:PersonDes-99999999_06-1067357-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_06-417214-id a ns1:E42_Identifier ;
+        rdfs:label "vdaa" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_06-5047260-id a ns1:E42_Identifier ;
+        rdfs:label "9996969" ;
+        ns1:P2_has_type "id" .
+
+    ns5:PersonDes-99999999_06-6718025-id a ns1:E42_Identifier ;
+        rdfs:label "99999443" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_06-7485098-id a ns1:E42_Identifier ;
+        rdfs:label "with009" ;
+        ns1:P2_has_type "dbnl_id" .
+
+    ns5:PersonDes-99999999_07 a ns1:E21_Person,
+            ns2:Person_Proxy ;
+        ns5:persName "Testperson, Anna" ;
+        ns4:has_nationality ns4:dutch ;
+        ns1:P48_has_preferred_identifier ns5:PersonDes-99999999_07-2511709-id,
+            ns5:PersonDes-99999999_07-2871172-id,
+            ns5:PersonDes-99999999_07-8102093-id,
+            ns5:PersonDes-99999999_07-9054293-id ;
+        ns2:person_proxy_for ns5:Person-99999999 ;
+        ns3:proxyIn ns5:BioDes-99999999_07 .
+
+    ns5:PersonDes-99999999_07-2511709-id a ns1:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_07-2871172-id a ns1:E42_Identifier ;
+        rdfs:label "weyerman" ;
+        ns1:P2_has_type "source" .
+
+    ns5:PersonDes-99999999_07-8102093-id a ns1:E42_Identifier ;
+        rdfs:label "99999945" ;
+        ns1:P2_has_type "bioport" .
+
+    ns5:PersonDes-99999999_07-9054293-id a ns1:E42_Identifier ;
+        rdfs:label "99999.xml" ;
+        ns1:P2_has_type "id" .
+
+    ns5:Residence-Den_Haag a ns5:Residence ;
+        rdfs:label "Den Haag" .
+
+    ns5:Residence-Zevenaar a ns5:Residence ;
+        rdfs:label "Zevenaar" .
+
+    ns5:Residence-s-Gravenhage a ns5:Residence ;
+        rdfs:label "'s-Gravenhage" .
+
+    ns5:bnode-75596970 a ns5:PersName ;
+        ns5:name ns5:bnode-12613247 ;
+        rdf:value "Anna " .
+
+    ns5:bnode-94858530 a ns5:PersName ;
+        ns5:name ns5:bnode-64757957,
+            ns5:bnode-9676967 .
+
+    ns5:Category-Beeldende_kunsten_vormgeving a ns5:Category ;
+        rdfs:label "Beeldende kunsten & vormgeving" .
+
+    ns4:Female a ns4:Gender .
+
+    ns5:Person-99999999 a ns2:Provided_Person ;
+        ns5:personID "99999999" .
+}
+

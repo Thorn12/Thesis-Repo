@@ -1,0 +1,45 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://data.biographynet.nl/rdf/> .
+@prefix ns4: <http://www.intavia.eu/idm-core/> .
+@prefix ns5: <http://ldf.fi/schema/bioc/> .
+@prefix ns6: <http://www.openarchives.org/ore/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_05 {
+    ns3:Occupation-schilder a ns5:Occupation ;
+        rdfs:label "schilder" .
+
+    ns3:Occupation-tekenaar a ns5:Occupation ;
+        rdfs:label "tekenaar" .
+
+    ns3:Person-99999999 a ns2:E21_Person,
+            ns4:Person_Proxy,
+            ns4:Provided_Person ;
+        ns3:persName "Testperson, Anna" ;
+        ns3:personID "99999999" ;
+        ns5:has_gender ns5:Female ;
+        ns5:has_nationality ns5:dutch ;
+        ns5:has_occupation ns3:Occupation-schilder,
+            ns3:Occupation-tekenaar ;
+        ns2:P48_has_preferred_identifier ns3:PersonDes-99999999_05-34221-id,
+            ns3:PersonDes-99999999_05-4001966-id,
+            ns3:PersonDes-99999999_05-719412-id ;
+        ns4:person_proxy_for ns3:Person-99999999 ;
+        ns6:proxyIn ns3:BioDes-99999999_05 .
+
+    ns3:PersonDes-99999999_05-34221-id a ns2:E42_Identifier ;
+        rdfs:label "rkdartists" ;
+        ns2:P2_has_type "source" .
+
+    ns3:PersonDes-99999999_05-4001966-id a ns2:E42_Identifier ;
+        rdfs:label "47698" ;
+        ns2:P2_has_type "id" .
+
+    ns3:PersonDes-99999999_05-719412-id a ns2:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns2:P2_has_type "bioport" .
+
+    ns5:Female a ns5:Gender .
+}
+

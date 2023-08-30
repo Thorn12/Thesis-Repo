@@ -1,0 +1,39 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns3: <http://www.intavia.eu/idm-core/> .
+@prefix ns4: <http://data.biographynet.nl/rdf/> .
+@prefix ns5: <http://www.openarchives.org/ore/terms/> .
+@prefix ns6: <http://ldf.fi/schema/bioc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_07 {
+    ns4:Person-99999999 a ns2:E21_Person,
+            ns3:Person_Proxy,
+            ns3:Provided_Person ;
+        ns4:persName "Testperson, Anna" ;
+        ns4:personID "99999999" ;
+        ns6:has_nationality ns6:dutch ;
+        ns2:P48_has_preferred_identifier ns4:PersonDes-99999999_07-2511709-id,
+            ns4:PersonDes-99999999_07-2871172-id,
+            ns4:PersonDes-99999999_07-8102093-id,
+            ns4:PersonDes-99999999_07-9054293-id ;
+        ns3:person_proxy_for ns4:Person-99999999 ;
+        ns5:proxyIn ns4:BioDes-99999999_07 .
+
+    ns4:PersonDes-99999999_07-2511709-id a ns2:E42_Identifier ;
+        rdfs:label "99999999" ;
+        ns2:P2_has_type "bioport" .
+
+    ns4:PersonDes-99999999_07-2871172-id a ns2:E42_Identifier ;
+        rdfs:label "weyerman" ;
+        ns2:P2_has_type "source" .
+
+    ns4:PersonDes-99999999_07-8102093-id a ns2:E42_Identifier ;
+        rdfs:label "99999945" ;
+        ns2:P2_has_type "bioport" .
+
+    ns4:PersonDes-99999999_07-9054293-id a ns2:E42_Identifier ;
+        rdfs:label "99999.xml" ;
+        ns2:P2_has_type "id" .
+}
+

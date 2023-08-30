@@ -1,0 +1,37 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://data.biographynet.nl/rdf/> .
+@prefix ns3: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ns4: <http://www.openarchives.org/ore/terms/> .
+@prefix ns5: <http://www.intavia.eu/idm-core/> .
+@prefix ns6: <http://ldf.fi/schema/bioc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:PersonDes-99999999_04 {
+    ns2:Person-99999999 a ns3:E21_Person,
+            ns5:Person_Proxy,
+            ns5:Provided_Person ;
+        ns2:persName ns2:bnode-94858530,
+            "Dalen, Anna van" ;
+        ns2:personID "99999999" ;
+        ns6:has_gender ns6:Female ;
+        ns6:has_nationality ns6:dutch ;
+        ns3:P48_has_preferred_identifier ns2:PersonDes-99999999_04-5492806-id,
+            ns2:PersonDes-99999999_04-8792693-id ;
+        ns5:person_proxy_for ns2:Person-99999999 ;
+        ns4:proxyIn ns2:BioDes-99999999_04 .
+
+    ns2:PersonDes-99999999_04-5492806-id a ns3:E42_Identifier ;
+        rdfs:label "AnnaTest" ;
+        ns3:P2_has_type "id" .
+
+    ns2:PersonDes-99999999_04-8792693-id a ns3:E42_Identifier ;
+        rdfs:label "dvn" ;
+        ns3:P2_has_type "source" .
+
+    ns2:bnode-94858530 a ns2:PersName ;
+        ns2:name ns2:bnode-64757957,
+            ns2:bnode-9676967 .
+
+    ns6:Female a ns6:Gender .
+}
+
